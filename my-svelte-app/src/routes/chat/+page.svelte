@@ -12,7 +12,8 @@
     }
 
     async function sendPrompt() {
-        const finalPrompt = enhancePrompt(userPrompt);
+        //const finalPrompt = enhancePrompt(userPrompt);
+      const finalPrompt = userPrompt;
         const result = await model.generateContent(finalPrompt);
         output = result.response.text();
     }
