@@ -1,10 +1,11 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-export default defineConfig({
-	plugins: [sveltekit()],
-  build: {
-    outDir: 'build',   // force visible output folder
-    emptyOutDir: true
-  }
-});
+export default {
+    kit: {
+        adapter: adapter({
+            fallback: '404.html'
+        })
+    },
+    preprocess: vitePreprocess()
+};
