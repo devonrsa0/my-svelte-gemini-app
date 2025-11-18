@@ -19,8 +19,8 @@
         output = result.response.text();
     }
 </script>
-
-<input bind:value={userPrompt} placeholder="Type something..." />
-<button on:click={sendPrompt}>Ask</button>
+<h1>සිංහල අක්ෂර වින්‍යාසය</h1>
+<input bind:value={userPrompt} placeholder="ඇතුළත් කරන්න..." />
+<button on:click={sendPrompt}>අසන්න</button>
 
 <p>{output}</p>
