@@ -11,7 +11,7 @@
         //return `Improve this prompt for clarity:\n${text}`;
       return `You are a Sinhala orthography and grammar expert. Correct the text focusing on ණ/න, ළ/ල, ශ/ෂ/ස, Mahāprāṇa/Alpaprāṇa letters (ඛ, ඝ, ඣ, ඪ, ථ, ධ, ඵ, භ), and Nasal/Saññaka (ඤ, ඥ). Output only corrected text. \n${text}`;
     }
-
+ 
     async function sendPrompt() {
         const finalPrompt = enhancePrompt(userPrompt);
       //const finalPrompt = userPrompt;
