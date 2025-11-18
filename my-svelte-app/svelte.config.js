@@ -4,7 +4,10 @@ const config = {
     kit: {
         adapter: adapter({
             fallback: 'index.html'
-        })
+        }),
+      paths: {
+            base: '/sinhala1'  // your repo name
+        }
     }
 };
 
